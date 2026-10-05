@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        .container{
+            width:400px;
+            margin:50px auto;
+            background:white;
+            padding:20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+        .header{
+            background:navy;
+            color:rgb(252, 250, 250);
+            text-align:center;
+            padding:15px;
+            font-size:30px;
+            font-weight:bold;
+            margin:-20px -20px 20px -20px;
+        }
+        .row{
+            display:flex;
+            gap:15px;
+        }
+        .input-group{
+            flex:1;
+            margin-bottom:15px;
+        }
+        label{
+            display:block;
+            margin-bottom:5px;
+        }
+        input, select{
+            width:100%;
+            padding:10px;
+            border:1px solid rgb(206, 151, 151);
+            box-sizing:border-box;
+        }
+        button{
+            width:100%;
+            padding:12px;
+            background:#086a9e;
+            color:rgb(251, 249, 249);
+            border:none;
+            font-size:18px;
+            cursor:pointer;
+        }
+        button:hover{
+            background:#0d5379;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">Registration Form</div>
+    <form>
+        <div class="row">
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text">
+            </div>
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="input-group">
+            <label>Email Address</label>
+            <input type="email">
+        </div>
+        <div class="input-group">
+            <label>Phone</label>
+            <input type="tel">
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <label>City</label>
+                <select>
+                    <option>Varanasi</option>
+                    <option>Kanpur</option>
+                    <option>Delhi</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Country</label>
+                <select>
+                    <option>India</option>
+                    <option>Nepal</option>
+                    <option>Japan</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit">Get Started</button>
+    </form>
+</div>
+
+</body>
+</html>
